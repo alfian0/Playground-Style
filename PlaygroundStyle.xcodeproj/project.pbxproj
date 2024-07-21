@@ -16,6 +16,7 @@
 		6BCFA4562C4CCEC30056DE28 /* LuminanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCFA4552C4CCEC30056DE28 /* LuminanceViewModel.swift */; };
 		6BCFA4582C4CD18B0056DE28 /* LuminanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCFA4572C4CD18B0056DE28 /* LuminanceView.swift */; };
 		6BCFA45A2C4CD4A70056DE28 /* VariationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCFA4592C4CD4A70056DE28 /* VariationView.swift */; };
+		6BCFA45C2C4D3C810056DE28 /* VariationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCFA45B2C4D3C810056DE28 /* VariationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		6BCFA4552C4CCEC30056DE28 /* LuminanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceViewModel.swift; sourceTree = "<group>"; };
 		6BCFA4572C4CD18B0056DE28 /* LuminanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceView.swift; sourceTree = "<group>"; };
 		6BCFA4592C4CD4A70056DE28 /* VariationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationView.swift; sourceTree = "<group>"; };
+		6BCFA45B2C4D3C810056DE28 /* VariationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				6BCFA4552C4CCEC30056DE28 /* LuminanceViewModel.swift */,
 				6BCFA4572C4CD18B0056DE28 /* LuminanceView.swift */,
 				6BCFA4592C4CD4A70056DE28 /* VariationView.swift */,
+				6BCFA45B2C4D3C810056DE28 /* VariationViewModel.swift */,
 			);
 			path = PlaygroundStyle;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				6BCFA45A2C4CD4A70056DE28 /* VariationView.swift in Sources */,
 				6BCFA4582C4CD18B0056DE28 /* LuminanceView.swift in Sources */,
 				6BCFA4522C4CC7D80056DE28 /* UIColor+Extension.swift in Sources */,
+				6BCFA45C2C4D3C810056DE28 /* VariationViewModel.swift in Sources */,
 				6BCFA4462C4CC5970056DE28 /* ContentView.swift in Sources */,
 				6BCFA4562C4CCEC30056DE28 /* LuminanceViewModel.swift in Sources */,
 				6BCFA4442C4CC5970056DE28 /* PlaygroundStyleApp.swift in Sources */,

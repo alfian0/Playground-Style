@@ -16,7 +16,7 @@ struct LuminanceView: View {
   
   var body: some View {
     NavigationLink {
-      VariationView(colors: [viewModel.colors[0], viewModel.colors[viewModel.colors.count-3], viewModel.colors[viewModel.colors.count-2]])
+      VariationView(viewModel: VariationViewModel(colors: viewModel.colors))
     } label: {
       ScrollView {
         VStack(spacing: 0) {
