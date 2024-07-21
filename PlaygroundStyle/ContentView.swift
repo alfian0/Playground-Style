@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject private var viewModel = PalleteViewModel(baseColor: .systemBlue)
+  @StateObject private var viewModel = PalleteViewModel(baseColor: UIColor(hex: "#806DFB"))
   
   var body: some View {
     NavigationStack {

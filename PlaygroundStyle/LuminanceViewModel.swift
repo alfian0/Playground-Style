@@ -12,16 +12,31 @@ class LuminanceViewModel: ObservableObject {
   
   init(baseColor: UIColor) {
     colors.append(baseColor)
-    generateColors()
+    
+    var multiplyBy = 20.0
+    var isWhite = true
+    while isWhite {
+      guard let color = baseColor.lighter(by: 5.0 * multiplyBy)?.toHexString(),
+            multiplyBy > 0 else {
+        isWhite = false
+        return
+      }
+      if (color == UIColor.white.toHexString()) {
+        multiplyBy -= 1
+      } else {
+        isWhite = false
+      }
+    }
+    generateColors(multiplyBy: multiplyBy-1)
   }
   
-  func generateColors() {
+  func generateColors(multiplyBy: CGFloat) {
+    let increments: [CGFloat] = [1.0, 2.0, 3.0, 4.0, 5.0].reversed()
     let baseColor = colors.first ?? .white
     var colorPalette = [UIColor]()
-    let increments: [CGFloat] = [1.0, 2.0, 3.0, 4.0, 5.0].reversed()
     
     for (_, increment) in increments.enumerated() {
-        if let lighterColor = baseColor.lighter(by: increment * 10) {
+        if let lighterColor = baseColor.lighter(by: increment * multiplyBy) {
           colorPalette.append(lighterColor)
         }
     }
