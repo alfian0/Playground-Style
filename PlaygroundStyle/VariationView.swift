@@ -51,7 +51,7 @@ struct VariationView: View {
         
         Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
           .foregroundColor(Color(colors[1]))
-          .font(.body)
+          .font(.caption)
       }
       .padding(16)
     }

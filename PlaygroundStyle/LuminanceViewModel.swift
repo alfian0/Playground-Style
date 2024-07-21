@@ -43,7 +43,7 @@ class LuminanceViewModel: ObservableObject {
     
     for (offset, color) in colors.enumerated() {
       let ratio = color.contrastRatio(with: backgroundColor)
-      if maxRatio < ratio && offset <= 8 {
+      if maxRatio < ratio && offset <= colors.count-3 {
         index = offset
         maxRatio = ratio
       }

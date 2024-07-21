@@ -55,6 +55,8 @@ class PalleteViewModel: ObservableObject {
       let saturation = value.saturation ?? hsv.saturation
       colors.append(UIColor(hue: value.hue ?? hsv.hue, saturation: min(saturation, 0.7), brightness: hsv.brightness, alpha: hsv.alpha))
     }
+    
+    colors.removeFirst()
   }
   
   func getForground(with backgroundColor: UIColor) -> UIColor {
